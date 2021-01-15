@@ -69,6 +69,7 @@ const config = {
       }),
     ],
   },
+  externals:{}, // 外部CDN等扩展
   stats: 'minimal'  // 控制台输出信息
 };
 
