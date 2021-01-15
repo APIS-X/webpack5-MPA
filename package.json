@@ -1,11 +1,10 @@
 {
-  "name": "website-webpack",
+  "name": "webpack-MPA",
   "version": "1.0.0",
   "private": true,
   "description": "webpack构建多页应用",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config build/webpack.config.js",
-    "dev": "nodemon --watch build/webpack.config.js",
     "build": "cross-env NODE_ENV=production webpack --progress --config build/webpack.config.js"
   },
   "author": "APIS",
