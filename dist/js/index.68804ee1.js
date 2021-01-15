@@ -1,0 +1,1 @@
+(self.webpackChunkwebpack_MPA=self.webpackChunkwebpack_MPA||[]).push([[826],{362:(e,t,a)=>{"use strict";var p=a(133),c=a.n(p),k=a(720),l=a.n(k);c()((function(){var e=l().template(c()("#dotTemplate").text());c()(".list").html(e([1,2,3,4,5]))}))}},0,[[362,666,736]]]);

@@ -1,1 +1,0 @@
-(self.webpackChunkwebsite_webpack=self.webpackChunkwebsite_webpack||[]).push([[826],{362:(e,t,a)=>{"use strict";var s=a(133),p=a.n(s),b=a(720),c=a.n(b);p()((function(){var e=c().template(p()("#dotTemplate").text());p()(".list").html(e([1,2,3,4,5]))}))}},0,[[362,666,736]]]);

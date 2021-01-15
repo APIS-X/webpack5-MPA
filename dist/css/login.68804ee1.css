@@ -68,24 +68,6 @@ body {
   width: 5px;
   height: 6px;
 }
-@font-face {
-  font-family: 'PingFang HK';
-  src: url('https://kda-website-1253851920.cos.ap-chengdu.myqcloud.com/font/PingFang-SC-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'PingFangLight';
-  src: url('https://kda-website-1253851920.cos.ap-chengdu.myqcloud.com/font/PingFangLight.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Futura';
-  src: url('https://kda-website-1253851920.cos.ap-chengdu.myqcloud.com/font/futura/futura_medium_bt.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 .tn-c {
   text-align: center;
 }
