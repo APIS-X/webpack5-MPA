@@ -1,0 +1,11 @@
+<!-- mod-sideMenu -->
+<section class="mod-sideMenu">
+  <a class="logo" href="/">
+    <img src="<%= logo %>" alt="" />
+  </a>
+  <ul class="mod-nav">
+    <% router.forEach(function(nav){ %>
+      <li class="<% if(key === nav.name){ %>active<% } %>"><a href="<%= nav.name %>.html"><%= nav.title %></a></li>
+    <% }); %>
+  </ul>
+</section>

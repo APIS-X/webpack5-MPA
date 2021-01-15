@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="<%= favicon %>" type="image/x-icon">
+  <title><%= title %></title>
+</head>
+<body class="layout-<%= mode %> wrap-<%= key %>">
+  <% if(mode === 'top') { %>
+    <!-- 'top' 布局 -->
+    <%= header %>
+    <!-- mod-container -->
+    <section class="mod-container">
+      <%= container %>
+    </section>
+    <%= footer %>
+  <% } %>
+
+  <% if(mode === 'side') { %>
+    <!-- 'side' 布局 -->
+    <%= sideMenu %>
+    <section class="mod-right">
+      <%= header %>
+      <!-- mod-container -->
+      <section class="mod-container">
+        <section class="container-main">
+          <%= container %>
+        </section>
+        <%= footer %>
+      </section>
+    </section>
+  <% } %>
+</body>
+</html>

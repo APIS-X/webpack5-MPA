@@ -1,0 +1,20 @@
+<!-- mod-header -->
+<header class="mod-header">
+  <% if(mode === 'top') { %>
+    <!-- 'top'布局 -->
+    <div class="wth-main">
+      <a class="logo" href="/">
+        <img src="<%= logo %>" alt="" />
+      </a>
+      <ul class="mod-nav fn-right">
+        <% router.forEach(function(nav){ %>
+          <li class="<% if(key === nav.name){ %>active<% } %>"><a href="<%= nav.name %>.html"><%= nav.title %></a></li>
+        <% }); %>
+      </ul>
+    </div>
+  <% } %>
+
+  <% if(mode === 'side') { %>
+    <!-- 'side'布局 -->
+  <% } %>
+</header>

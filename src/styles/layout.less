@@ -1,0 +1,103 @@
+@import '@/styles/variables';
+
+.wth-main {
+  width: 1400px;
+  margin: 0 auto;
+}
+.mod-header{
+  height: 54px;
+  line-height: 54px;
+  background: @color-dark;
+  box-shadow: 0 2px 4px rgba(0,21,41,.08);
+  img{
+    vertical-align: middle;
+    height: @height-logo;
+  }
+}
+.mod-nav{
+  li{
+    float: left;
+    &.active{
+      a{
+        color: @color-primary;
+        background: rgba(0,0,0, .8);
+      }
+    }
+  }
+  a{
+    display: block;
+    padding: 0 20px;
+    font-size: 16px;
+    transition: all .3s;
+    color: #FFF;
+    &:hover{
+      color: @color-primary;
+      background: rgba(0,0,0, .8);
+    }
+  }
+}
+.mod-sideMenu{
+  width: 180px;
+  height: 100vh;
+  background: @color-dark;
+  .logo{
+    display: block;
+    min-height: 34px;
+    padding: 10px 15px;
+    img{
+      height: @height-logo;
+    }
+  }
+  .mod-nav{
+    li{
+      display: block;
+      float: none;
+      border-top: 1px solid transparent;
+      &:hover{
+        border-top: 1px solid @color-line;
+      }
+      &:first-child{
+        border-top: 0;
+      }
+      a{
+        display: block;
+        padding: 0 15px;
+        line-height: 54px;
+      }
+    }
+  }
+}
+.mod-container{
+  padding: 15px;
+}
+.mod-footer{
+  padding: 10px 0;
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px;
+  color: #999;
+}
+.layout-side{
+  display: flex;
+  overflow: hidden;
+  .mod-right{
+    flex: 1;
+  }
+  .mod-container{
+    height: calc(~'100vh - 54px');
+    padding-bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .container-main{
+    min-height: calc(~'100vh - 107px');
+  }
+  .mod-header{
+    background: #FFF;
+  }
+}
+.layout-top{
+  .mod-container{
+    min-height: calc(~'100vh - 92px');
+  }
+}

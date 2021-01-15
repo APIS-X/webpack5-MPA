@@ -1,0 +1,19 @@
+<section>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- EJS语法 -->
+      <% dataBanner.forEach(function(item){ %>
+        <div class="swiper-slide">Slide <%= item %></div>
+      <% }); %>
+    </div>
+  </div>
+
+  <div class="list"></div>
+</section>
+
+<!-- Dot语法 -->
+<script id="dotTemplate" type="text/x-dot-template">
+  {{~it :item:index }}
+    <h3>{{=item}}</h3>
+  {{~}}
+</script>

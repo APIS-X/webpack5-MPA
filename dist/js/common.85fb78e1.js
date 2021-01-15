@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite_webpack=self.webpackChunkwebsite_webpack||[]).push([[592],{306:(e,a,t)=>{"use strict";var p=t(611),s=t.n(p);t.p,s()},611:e=>{e.exports=[{name:"index",path:"pages/index",title:"首页"},{name:"about",path:"pages/about",title:"关于我们"},{name:"login",path:"pages/login",title:"登录"},{name:"demo",path:"pages/demo",title:"Demo"}]}}]);
