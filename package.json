@@ -1,5 +1,5 @@
 {
-  "name": "webpack-MPA",
+  "name": "webpack_MPA",
   "version": "1.0.0",
   "private": true,
   "description": "webpack构建多页应用",

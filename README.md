@@ -58,3 +58,5 @@ Web项目包括MPA(多页应用)、SPA(单页应用)等开发模式。采用Reac
   ```
 
 ## 注意点
+- 该项目是用webpack5构建的, 配置文件中相关loader、plugins、以及webpack-dev-server的配置和版本已做同步更新调整;
+- 页面模板使用webpack5默认的ejs模板，书写模板的时候在使用ejs语法的同时也要考虑webpack的兼容情况;
