@@ -1,5 +1,6 @@
-const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const settings = require('./settings');
 
 module.exports = [
   {
@@ -67,7 +68,7 @@ module.exports = [
     loader: 'file-loader',
     options: {
       name: '[path][name].[ext]',
-      context: path.resolve(__dirname, '../src/')
+      context: settings.context
     },
   }, 
 ];

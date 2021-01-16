@@ -11,13 +11,14 @@ Web项目包括MPA(多页应用)、SPA(单页应用)等开发模式。采用Reac
 
 ## 目录结构
 ```
-├─ build                          Webpack编译文件配置目录   
+├─ build                          Webpack编译文件配置目录
+    ├─ settings.js                打包路径等相关配置入口
     ├─ entry.js                   入口配置
     ├─ plugins.js                 插件配置
     ├─ rules.js                   loader等配置
     ├─ webpack.config.js          配置文件入口
 ├─ dist                           打包生成目录
-    ├─ assets                     对应'src/assets'目录
+    ├─ assets                     静态文件目录,对应'src/assets'
     ├─ js                         打包生成js目录
         ├─ *.js
     ├─ css                        打包生成的css目录
@@ -58,5 +59,6 @@ Web项目包括MPA(多页应用)、SPA(单页应用)等开发模式。采用Reac
   ```
 
 ## 注意点
-- 该项目是用webpack5构建的, 配置文件中相关loader、plugins、以及webpack-dev-server的配置和版本已做同步更新调整;
+- 项目使用webpack5构建，官网要求node最低版本为10.13.0 (LTS)。
+- 项目是用webpack5构建, 考虑版本兼容性等,配置文件中相关loader、plugins、以及webpack-dev-server的配置和版本已做同步更新调整;
 - 页面模板使用webpack5默认的ejs模板，书写模板的时候在使用ejs语法的同时也要考虑webpack的兼容情况;

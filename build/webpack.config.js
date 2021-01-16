@@ -1,7 +1,6 @@
-const path = require('path');
-
 const TerserPlugin = require('terser-webpack-plugin');
 
+const settings = require('./settings');
 const entry = require('./entry');
 const rules = require('./rules');
 const plugins = require('./plugins');
@@ -9,22 +8,20 @@ const plugins = require('./plugins');
 const config = {
   entry,
   output: {
-    path: path.resolve(__dirname, '../dist'), // 所有静态文件打包后的公共目录
-    filename: "js/[name].[fullhash:8].js"
+    path: settings.pathDist, // 所有静态文件打包后的公共目录
+    filename: settings.filename_js
   },
   module: {
     rules
   },
   resolve: {
-    alias: {  // 别名配置
-      '@': path.join(__dirname, '../src')
-    },
+    alias: settings.resolveAlias,
     extensions: ['.js', '.ejs', '.less']
   },
   plugins,
   devServer: {  // webpack-dev-server 配置
     historyApiFallback: true,
-    contentBase: path.resolve(__dirname, '../src/pages'),
+    contentBase: settings.pathContentBase,
     compress: true,
     open: true,
     inline: true, // 可以监控js变化

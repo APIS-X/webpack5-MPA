@@ -1,9 +1,8 @@
-const path =  require('path');
-const pages = require('../src/configs/router');
+const settings = require('./settings');
 
 const entrys = {};
-pages.forEach(page=> {
-  entrys[page.name] = path.resolve(__dirname, `../src/${page.path}/main`);
+settings.routers.forEach(page=> {
+  entrys[page.name] = settings.pathEntry(page.path);
 });
 
 module.exports = entrys;
